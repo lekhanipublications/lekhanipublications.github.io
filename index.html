@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lekhani Publications | Books for Every Imagination</title>
+  <meta name="description" content="Discover children's books, activity books and creative learning resources from Lekhani Publications.">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #30251f; background: #fffaf4; }
+    header { background: #762c3b; color: white; padding: 22px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+    header h1 { margin: 0; font-size: 25px; }
+    nav a { color: white; text-decoration: none; margin-left: 18px; }
+    .hero { text-align: center; padding: 60px 20px; background: #f4e4d8; }
+    .hero h2 { font-size: clamp(30px, 5vw, 46px); margin: 0 0 14px; color: #762c3b; }
+    .hero p { line-height: 1.7; max-width: 620px; margin: 0 auto 24px; }
+    .button { display: inline-block; background: #a84b32; color: white; padding: 13px 20px; border-radius: 7px; text-decoration: none; border: 0; cursor: pointer; font-size: 15px; }
+    main { max-width: 1150px; margin: auto; padding: 35px 20px 60px; }
+    .tools { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    input, select { padding: 12px; border: 1px solid #d9c9bd; border-radius: 7px; background: white; font-size: 15px; }
+    input { flex: 1; min-width: 200px; }
+    .books { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+    .book { background: white; border: 1px solid #eaded4; border-radius: 12px; overflow: hidden; }
+    .cover { height: 210px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; background: #f0d8c8; color: #762c3b; font-size: 25px; font-weight: bold; }
+    .book-info { padding: 18px; }
+    .book-info h3 { margin: 0 0 9px; }
+    .book-info p { line-height: 1.5; color: #65564d; font-size: 14px; }
+    .price { font-size: 21px; font-weight: bold; margin: 14px 0; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .links a { font-size: 13px; padding: 10px; border-radius: 6px; text-decoration: none; background: #762c3b; color: white; }
+    .links a.secondary { background: #245bb5; }
+    .note { background: #fff1d7; padding: 15px; border-radius: 8px; margin: 25px 0; line-height: 1.6; }
+    footer { background: #4a2029; color: white; padding: 28px 20px; text-align: center; line-height: 1.8; }
+    @media(max-width: 600px) { header { padding: 18px; } nav a { margin: 0 10px 0 0; } .hero { padding: 40px 18px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lekhani Publications</h1>
+    <nav><a href="#books">Our Books</a><a href="#about">About Us</a></nav>
+  </header>
+
+  <section class="hero">
+    <h2>Little Books. Big Imaginations.</h2>
+    <p>Explore stories, activity books and creative learning experiences designed to make every page an adventure.</p>
+    <a class="button" href="#books">Explore Our Books</a>
+  </section>
+
+  <main>
+    <section id="books">
+      <h2>Discover Our Books</h2>
+      <p>Find a new favourite for your next reading or learning adventure.</p>
+
+      <div class="tools">
+        <input id="search" type="search" placeholder="Search books..." aria-label="Search books">
+        <select id="category" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="story">Story Books</option>
+          <option value="activity">Activity Books</option>
+          <option value="learning">Learning Books</option>
+        </select>
+      </div>
+
+      <div class="books" id="book-list">
+        <article class="book" data-category="story">
+          <div class="cover">Chippy's<br>Great Adventure</div>
+          <div class="book-info">
+            <h3>Chippy's Great Adventure</h3>
+            <p>A children's story from Lekhani Publications. Add your final book description and age recommendation here.</p>
+            <div class="price">Price: Update me</div>
+            <div class="links">
+              <a href="#contact">Order enquiry</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="book" data-category="activity">
+          <div class="cover">My World</div>
+          <div class="book-info">
+            <h3>My World</h3>
+            <p>A creative book concept for drawing, exploring and building a world of your own.</p>
+            <div class="price">Coming soon</div>
+            <div class="links"><a href="#contact">Ask about this book</a></div>
+          </div>
+        </article>
+
+        <article class="book" data-category="learning">
+          <div class="cover">Little Explorers</div>
+          <div class="book-info">
+            <h3>Little Explorers</h3>
+            <p>Discover activities, puzzles and playful learning. Update this description when your edition is ready.</p>
+            <div class="price">Coming soon</div>
+            <div class="links"><a href="#contact">Ask about this book</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="note">Marketplace links will be added after your books have active Amazon or Flipkart product listings. Replace sample prices and descriptions before launch.</div>
+    </section>
+
+    <section id="about">
+      <h2>About Lekhani Publications</h2>
+      <p>We create books that encourage reading, imagination, creativity and joyful learning.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Book enquiries</h2>
+      <p>Contact us to ask about book availability and ordering.</p>
+      <p>Please add your business email or WhatsApp contact before publishing this section for customers.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Lekhani Publications</strong><br>
+    Stories, creativity and learning — one page at a time.
+  </footer>
+
+  <script>
+    const search = document.getElementById('search');
+    const category = document.getElementById('category');
+    const cards = document.querySelectorAll('.book');
+
+    function filterBooks() {
+      const query = search.value.toLowerCase();
+      cards.forEach(card => {
+        const matchesText = card.innerText.toLowerCase().includes(query);
+        const matchesCategory = category.value === 'all' || card.dataset.category === category.value;
+        card.style.display = matchesText && matchesCategory ? '' : 'none';
+      });
+    }
+
+    search.addEventListener('input', filterBooks);
+    category.addEventListener('change', filterBooks);
+  </script>
+</body>
+</html>
